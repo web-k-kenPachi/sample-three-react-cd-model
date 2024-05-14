@@ -1,9 +1,25 @@
-# React + Vite
+# 3Dモデルを使用したWEBページのサンプルコード
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## DEMO
+https://lp.kenpachi.design/melo-emo/
 
-Currently, two official plugins are available:
+<img src="projects_case02-img-anim01.webp" width="400px"/>
+<img src="projects_case02-img-anim02.webp" width="400px"/>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# sample-three-react-cd-model
+## React-three-fiber で３Dモデルを描画したサイト
+React-three-fiberで3Dモデルを表示しております。
+スクロールと連動したアニメーションはGsapのScrollTriggerで対応しております。
+
+## 主なプラグイン
+- react
+- three.js
+- react-three-fiber
+- gsap
+- framer-motion
+- swiper
+
+## 起動
+```
+npm i
+npm run dev
+```
