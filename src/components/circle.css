@@ -1,0 +1,73 @@
+:root {
+  /* --color-text: #292725;
+  --color-bg: #dad4d1;
+  --color-link: #a99c90;
+  --color-link-hover: #292725;
+  --color-font-circle: #7b7772;
+  --color-button: #a99c90;
+  --color-text-button: #272524;
+  --color-text-circle-1: #272524;
+  --color-text-circle-2: #272524;
+  --color-text-circle-3: #e3682a;
+  --color-text-circle-4: #272524;
+  --font-circle-1: modesto-condensed, serif;
+  --font-circle-2: ambroise-firmin-std, serif;
+  --font-weight-circle-2: 300;
+  --font-circle-3: modesto-condensed, serif;
+  --font-weight-circle-3: 400;
+  --font-circle-4: niagara, sans-serif;
+  --font-weight-circle-4: 300; */
+
+  --color-text-circle-1: #fff;
+  --color-text-circle-2: #fff245;
+  --color-text-circle-3: #fff;
+  --color-text-circle-4: #fff245;
+}
+
+.circles {
+  pointer-events: none;
+  position: absolute;
+  --dim: 186vmin;
+  width: var(--dim);
+  height: var(--dim);
+  top: calc(50% - var(--dim) / 2);
+  left: calc(50% - var(--dim) / 2);
+}
+
+.demo-3 .circles {
+  --dim: 206vmin;
+}
+
+/* .circles__text {
+  text-transform: uppercase;
+  transform-origin: 700px 700px;
+  will-change: transform, opacity;
+} */
+
+.circles__text--1 {
+  font-size: 25vmin;
+  font-size: clamp(170px, 25vmin, 180px);
+  font-weight: 700;
+  fill: var(--color-text-circle-1);
+}
+
+.circles__text--2 {
+  font-size: 13.5vmin;
+  font-size: clamp(110px, 13.5vmin, 120px);
+  font-weight: 700;
+  fill: var(--color-text-circle-2);
+}
+
+.circles__text--3 {
+  font-size: 9.5vmin;
+  font-size: clamp(85px, 9.5vmin, 94px);
+  font-weight: 700;
+  fill: var(--color-text-circle-3);
+}
+
+.circles__text--4 {
+  font-size: 4.5vmin;
+  font-size: clamp(40px, 4.5vmin, 44px);
+  font-weight: 700;
+  fill: var(--color-text-circle-4);
+}

@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* #root {
+  width: 100vw;
+  height: 100vh;
+} */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Kaisei Decol', sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gradient-bg {
+  background: linear-gradient(
+    192.57deg,
+    #12c2e9 19.92%,
+    #c471ed 51.49%,
+    #f64f59 81.77%
+  );
+}
+
+.gradient-bg--opacity {
+  background: linear-gradient(
+    192.57deg,
+    rgba(18, 194, 233, 0.87) 19.92%,
+    rgba(196, 113, 237, 0.87) 51.49%,
+    rgba(246, 79, 89, 0.87) 81.77%
+  );
+}
+
+.gradient-bg-promotion {
+  background: linear-gradient(36.61deg, #d586b5 0%, #87d0f4 100%);
+}
+
+.grid-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0px;
+  /* 方眼紙模様に必須のスタイル */
+  background-image: linear-gradient(
+      0deg,
+      transparent calc(100% - 1px),
+      #f0f0f0 calc(100% - 1px)
+    ),
+    linear-gradient(
+      90deg,
+      transparent calc(100% - 1px),
+      #f0f0f0 calc(100% - 1px)
+    );
+  background-size: 40px 40px;
+  background-repeat: repeat;
+  background-position: center center;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.pin-spacer {
+  pointer-events: none;
+}
+
+.main-visual-clip {
+  clip-path: inset(1rem 2rem 1rem 2rem round 1rem);
+}
+
+@media screen and (min-width: 768px) {
+  .main-visual-clip {
+    clip-path: inset(2rem 5rem 2rem 5rem round 1rem);
+  }
+}
+
+/* テキストサークルエリアタッチ対策 */
+@media (hover: none) {
+  .touch-event-add-layer::after,
+  .touch-event-add-layer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: 101;
+    width: 14%;
+    height: 100%;
+  }
+
+  .touch-event-add-layer::after {
+    left: 0;
+  }
+
+  .touch-event-add-layer::before {
+    right: 0;
+  }
+}
